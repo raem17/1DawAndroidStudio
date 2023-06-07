@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuidditchScore</string>
+    <string name="buttonReset">Resetear</string>
+    <string name="zero">0</string>
+    <string name="tenPoints">+10 PUNTOS</string>
+    <string name="fivePoints">+5 PUNTOS</string>
+    <string name="snitch">SNITCH DORADA</string>
+
+    <string name="textViewTeamA">Equipo A</string>
+    <string name="textViewTeamB">Equipo B</string>
+</resources>

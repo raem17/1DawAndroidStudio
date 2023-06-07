@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/mainContainer"
+    android:background="@drawable/snitch"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:id="@+id/topContainer"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/teamAContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/textViewTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:text="@string/textViewTeamA"
+                android:fontFamily="@font/harry_p"
+                />
+
+            <TextView
+                android:id="@+id/textViewContTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTeamA"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="100sp"
+                android:textColor="#CB000000"
+                android:text="@string/zero"
+                android:fontFamily="@font/harry_p"
+                />
+
+            <Button
+                android:id="@+id/button10pTeamA"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/textViewContTeamA"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tenPoints"
+                android:onClick="incrementarMarcadores"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/button5pTeamA"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/button10pTeamA"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fivePoints"
+                android:onClick="incrementarMarcadores"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/buttonSnitchTeamA"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/button5pTeamA"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/snitch"
+                android:onClick="snitchEncontrada"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teamBContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            >
+
+            <TextView
+                android:id="@+id/textViewTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:text="@string/textViewTeamB"
+                android:fontFamily="@font/harry_p"
+                />
+
+            <TextView
+                android:id="@+id/textViewContTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTeamB"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="100sp"
+                android:textColor="#CB000000"
+                android:text="@string/zero"
+                android:fontFamily="@font/harry_p"
+                />
+
+            <Button
+                android:id="@+id/button10pTeamB"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/textViewContTeamB"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tenPoints"
+                android:onClick="incrementarMarcadores"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/button5pTeamB"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/button10pTeamB"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fivePoints"
+                android:onClick="incrementarMarcadores"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/buttonSnitchTeamB"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/button5pTeamB"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/snitch"
+                android:onClick="snitchEncontrada"
+                android:fontFamily="@font/harry_p"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/bottomContainer"
+        >
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="@string/buttonReset"
+            android:layout_centerHorizontal="true"
+            android:onClick="reset"
+            android:fontFamily="@font/harry_p"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/editTextCadena"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Introduzca la cadena 'sucia'"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonLimpiarCadena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devolver la cadena limpia"
+        android:padding="13dp"
+        android:textSize="15sp"
+        android:backgroundTint="#3F51B5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextCadena"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewAux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadena limpia:"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="23sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewCadenaLimpia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewCadenaLimpia"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:layout_below="@id/textViewAux"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

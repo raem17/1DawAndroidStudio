@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RelativeLayoutChallenge</string>
+    <string name="textViewName">Playa de Las Canteras</string>
+    <string name="textViewPlace">Gran Canaria</string>
+    <string name="textViewLength">3100 metros de longitud</string>
+    <string name="descriptionimageViewBeach">Playa de las Canteras</string>
+</resources>

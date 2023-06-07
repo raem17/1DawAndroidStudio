@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SecondMiniProjectQuizz</string>
+    <string name="textViewTitulo">Bienvenido al quiz de God of War</string>
+    <string name="buttonStart">Empezar partida</string>
+    <string name="textViewQuestion">Pregunta</string>
+    <string name="editTextRespuestaHint">Escribe aquí</string>
+    <string name="buttonNext">Siguiente</string>
+    <string name="answer">Respuesta</string>
+    <string name="textViewTituloResultados">Resultados</string>
+    <string name="buttonShare">Comparte tus resultados</string>
+    <string name="buttonStartAgain">Comenzar una partida nueva</string>
+</resources>

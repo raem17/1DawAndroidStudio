@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FirstMiniProjectBusiness</string>
+    <string name="imageViewBusiness">Cafe en The Relaxed Coffee</string>
+    <string name="textViewNameBusiness">The Relaxed Coffee</string>
+    <string name="imageViewShop">Icono de tienda</string>
+    <string name="textViewDescription" tools:ignore="Typos">En The Relaxed Coffee te ofrecemos una gran variedad de cafés para que puedas disfrutar de un momento agradable.</string>
+    <string name="imageViewEmail">Icono de email</string>
+    <string name="textViewEmail">Email: therelaxedcoffee@gmail.com</string>
+    <string name="imageViewSchedule">Icono de horario</string>
+    <string name="textViewSchedule">Horario: Todos los días de 7:00 a 22:00 p.m.</string>
+    <string name="imageViewWeb">Icono de internet</string>
+    <string name="textViewWeb">Web: therelaxedcoffee.es</string>
+    <string name="imageViewAddress">Icono de direccion</string>
+    <string name="textViewAddress">Dirección: C/ de Donoso Cortés, 61, 28015 Madrid</string>
+    <string name="textViewPhoneNumber">Número de teléfono</string>
+    <string name="textViewNumber">+34 646 26 58 52</string>
+    <string name="imageViewPhone">Icono de teléfono</string>
+</resources>

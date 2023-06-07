@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPetActivity"
+    android:id="@+id/mainContainer"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondo_main"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/generalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewGeneralIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/icon_general"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewGeneral"
+            android:textSize="20sp"
+            android:textColor="#338036"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imageViewGeneralIcon"
+            android:layout_marginStart="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewGeneral"
+            android:ems="10"
+            android:hint="@string/editTextNombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize"
+            android:layout_marginTop="5dp"
+            android:maxLength="15"/>
+
+        <EditText
+            android:id="@+id/editTextRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNombre"
+            android:ems="10"
+            android:hint="@string/editTextRaza"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLength="30"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sexContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="20dp"
+        android:layout_below="@id/generalContainer"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewSex"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/icon_sex"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textViewSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewSex"
+            android:textSize="20sp"
+            android:textColor="#338036"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageViewSex"
+            android:layout_marginStart="10dp"
+            tools:ignore="RelativeOverlap"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pesoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:layout_below="@id/sexContainer"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewPesoIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/icon_peso"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewPeso"
+            android:textSize="20sp"
+            android:textColor="#338036"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageViewPesoIcon"
+            android:layout_marginStart="10dp"
+            tools:ignore="RelativeOverlap"
+            />
+
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/textViewKg"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="00.00"
+            android:gravity="end"
+            tools:ignore="HardcodedText,RelativeOverlap,TouchTargetSizeCheck"
+            android:autofillHints=""
+            android:layout_marginEnd="10dp"
+            android:maxLength="5"
+            />
+
+        <TextView
+            android:id="@+id/textViewKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kg"
+            android:textSize="20sp"
+            android:textColor="#338036"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="HardcodedText,RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pesoContainer"
+        android:text="@string/buttonCreate"
+        tools:ignore="VisualLintButtonSize"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

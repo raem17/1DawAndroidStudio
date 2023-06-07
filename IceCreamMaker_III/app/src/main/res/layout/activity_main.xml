@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#1A000000"
+    android:id="@+id/mainContainer"
+    >
+
+    <LinearLayout
+        android:id="@+id/aplicacionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#BFF48FB1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/headerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80D264A0"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewHelado"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/ice_cream"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewTitulo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:textSize="40sp"
+                android:fontFamily="@font/ice_cream_man"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner_view"
+            >
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/editTextNombre"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                tools:ignore="TextContrastCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coberturasContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner_view"
+            >
+
+            <TextView
+                android:id="@+id/textViewCoberturas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewCoberturas"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCremaBatida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCoberturas"
+                android:text="@string/checkBoxCremaBatida"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxChocolate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBoxCremaBatida"
+                android:text="@string/checkBoxChocolate"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewCremaBatida"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/whip_cream"
+                android:layout_below="@id/textViewCoberturas"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/checkBoxCremaBatida"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageViewChocolate"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/chocolate"
+                android:layout_below="@id/checkBoxCremaBatida"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/checkBoxChocolate"
+                tools:ignore="ContentDescription"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cantidadContaniner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner_view"
+            >
+
+            <TextView
+                android:id="@+id/textViewCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/textViewCantidad"
+                android:textSize="25sp"
+                tools:ignore="RelativeOverlap"/>
+
+            <Button
+                android:id="@+id/buttonDecrease"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toStartOf="@id/textViewNumCantidad"
+                android:layout_centerVertical="true"
+                android:onClick="decrease"
+                android:text="@string/buttonDecrease"
+                android:textSize="25sp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textViewNumCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/buttonIncrease"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/textViewNumCantidad"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/buttonIncrease"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="increase"
+                android:text="@string/buttonIncrease"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pedidoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner_view"
+            >
+
+            <TextView
+                android:id="@+id/textViewTituloResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewTextoResumen"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textViewResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTituloResumen"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/buttonResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewResumenPedido"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:onClick="onClickButtonResumen"
+                android:text="@string/buttonResumen"
+                android:enabled="false"
+                tools:ignore="TextContrastCheck"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:id="@+id/buttonHacerPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonResumenPedido"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="@string/buttonHacerPedido"
+                android:enabled="false"
+                android:onClick="onClickButtonHacerPedido"
+                tools:ignore="TextContrastCheck"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

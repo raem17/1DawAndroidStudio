@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/mainContainer"
+    android:background="@drawable/borde_redondo"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewVisualExample"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        />
+
+    <TextView
+        android:id="@+id/textViewSpanishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@id/imageViewVisualExample"
+        android:fontFamily="@font/ring_m"
+        android:text="SpanishWord"
+        android:textColor="#f9e9c9"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewElfishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@id/imageViewVisualExample"
+        android:layout_below="@id/textViewSpanishWord"
+        android:text="ElfishWord"
+        android:textColor="#f9e9c9"
+        android:textSize="16sp"
+        android:fontFamily="@font/ring_m"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewPlay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/button_play"
+        android:layout_marginEnd="20dp"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</RelativeLayout>

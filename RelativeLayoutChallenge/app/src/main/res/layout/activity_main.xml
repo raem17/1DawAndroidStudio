@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#2196F3">
+
+    <ImageView
+        android:id="@+id/imageViewBeach"
+        android:contentDescription="@string/descriptionimageViewBeach"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/playa"
+        />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="@string/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_toEndOf="@id/imageViewBeach"
+        />
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_toEndOf="@id/imageViewBeach"
+        android:text="@string/textViewPlace"
+        android:textColor="#BBDEFB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewLength"
+        android:text="@string/textViewLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BBDEFB"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/imageViewBeach"
+        android:layout_below="@id/textViewPlace"
+        />
+
+</RelativeLayout>

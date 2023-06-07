@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PetDayCareKotAndFire</string>
+    <string name="textViewPrincipal">No hay mascotas añadidas.\nPresione la huella para introducir una nueva.</string>
+    <string name="floatingActionButtonHuella">Crear mascota</string>
+    <string name="buttonAcceder">ACCEDER</string>
+    <string name="buttonRegistrarse">REGISTRARSE</string>
+    <string name="textViewGeneral">General</string>
+    <string name="editTextNombre">Nombre</string>
+    <string name="editTextRaza">Raza</string>
+    <string name="textViewSex">Sexo</string>
+    <string name="textViewPeso">Peso</string>
+    <string name="buttonCreate">Crear</string>
+    <string name="buttonSave">Guardar</string>
+    <string name="textViewDatoCurioso">Dato curioso sobre los perros.</string>
+    <string name="textViewSabiasQue">¿Sabías qué?</string>
+    <string name="itemEliminar">Eliminar mascota</string>
+
+    <string-array name="sexes">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+</resources>

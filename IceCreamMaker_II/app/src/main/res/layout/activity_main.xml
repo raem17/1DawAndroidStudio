@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#1A000000"
+    android:id="@+id/mainContainer"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:id="@+id/cantidadContaniner"
+        >
+
+        <TextView
+            android:id="@+id/textViewCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/textViewCantidad"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonDecrease"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/textViewCantidad"
+            android:onClick="decrease"
+            android:text="@string/buttonDecrease"
+            android:textSize="25sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textViewNumCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/buttonDecrease"
+            android:text="@string/textViewNumCantidad"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonIncrease"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/textViewNumCantidad"
+            android:minHeight="48dp"
+            android:onClick="increase"
+            android:text="@string/buttonIncrease"
+            android:textSize="25sp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/precioContainer"
+        >
+
+        <TextView
+            android:id="@+id/textViewPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/textViewPrecio"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewNumPrecioTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@id/textViewPrecio"
+            android:text="@string/textViewNumPrecioTotal"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewSimboloEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/textViewNumPrecioTotal"
+            android:text="@string/textViewSimboloEuro"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonResumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPrecio"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:onClick="onClickButtonResumen"
+            android:padding="15dp"
+            android:text="@string/buttonResumen"
+            tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewProvisional"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+</LinearLayout>

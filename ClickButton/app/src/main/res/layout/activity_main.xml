@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:id="@+id/imageViewAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/imageViewAnimal"
+            app:srcCompat="@drawable/dog"
+            tools:ignore="ImageContrastCheck" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonDogToMonkey"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="changeImage"
+            android:text="@string/buttonDogToMonkey"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/buttonMonkeyToDog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="changeImage"
+            android:text="@string/buttonMonkeyToDog" />
+
+    </LinearLayout>
+</LinearLayout>

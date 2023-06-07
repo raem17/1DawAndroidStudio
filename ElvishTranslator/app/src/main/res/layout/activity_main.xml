@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/scrollViewContainer"
+    android:orientation="vertical"
+    android:background="#1a2225"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mainContainer"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewBigIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/icono_principal"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <RelativeLayout
+            android:id="@+id/coloresContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde_redondo"
+            android:layout_below="@id/imageViewBigIcon"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewColores"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/paleta"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textViewColores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/imageViewColores"
+                android:text="@string/textViewColores"
+                android:textColor="#f9e9c9"
+                android:textSize="30sp"
+                android:fontFamily="@font/ring_m"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/familiaContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde_redondo"
+            android:padding="20dp"
+            android:layout_below="@id/coloresContainer">
+
+            <ImageView
+                android:id="@+id/imageViewFamilia"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/familia"
+                tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textViewFamilia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/imageViewFamilia"
+                android:text="@string/textViewFamilia"
+                android:textColor="#f9e9c9"
+                android:textSize="30sp"
+                android:fontFamily="@font/ring_m"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frasesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde_redondo"
+            android:padding="20dp"
+            android:layout_below="@id/familiaContainer"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewPhrase"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/frase"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textViewFrases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/imageViewPhrase"
+                android:text="@string/textViewFrases"
+                android:textColor="#f9e9c9"
+                android:textSize="30sp"
+                android:fontFamily="@font/ring_m"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numerosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde_redondo"
+            android:padding="20dp"
+            android:layout_below="@id/frasesContainer"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewNumeros"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/numeros"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textViewNumeros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/imageViewNumeros"
+                android:text="@string/textViewNumeros"
+                android:textColor="#f9e9c9"
+                android:textSize="30sp"
+                android:fontFamily="@font/ring_m"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

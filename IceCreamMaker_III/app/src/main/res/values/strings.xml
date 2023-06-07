@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IceCreamMaker_III</string>
+    <string name="textViewCantidad">CANTIDAD:</string>
+    <string name="textViewNumCantidad">1</string>
+    <string name="textViewTextoResumen">Resumen del pedido:</string>
+    <string name="buttonResumen">RESUMEN DEL PEDIDO</string>
+    <string name="buttonIncrease">+</string>
+    <string name="buttonDecrease">-</string>
+    <string name="textViewCoberturas">COBERTURAS:</string>
+    <string name="checkBoxCremaBatida">Crema batida</string>
+    <string name="checkBoxChocolate">Chocolate</string>
+    <string name="editTextNombre">Nombre</string>
+    <string name="buttonHacerPedido">Hacer pedido</string>
+    <string name="textViewTitulo">Guido´s</string>
+</resources>

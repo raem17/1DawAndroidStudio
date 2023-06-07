@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alejandro_Enriquez_First</string>
+    <string name="textViewTituloAplicacion">Opera Max - Gestión de datos</string>
+    <string name="textViewNombreCreador">Opera</string>
+    <string name="textViewClasificacionEdad">Todos</string>
+    <string name="buttonInstalar">Instalar</string>
+    <string name="textViewDescargas">Descargas</string>
+    <string name="textViewVotos">94,201</string>
+    <string name="textViewCategoria">Herramientas</string>
+    <string name="textViewSimilares">Similares</string>
+    <string name="textViewDescripcion">Gestor de datos: ahorra datos y aumenta la duración de la batería con Opera Max</string>
+    <string name="textViewLeerMas">LEER MÁS</string>
+</resources>

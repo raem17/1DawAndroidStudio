@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAskName"
+    android:id="@+id/mainContainer"
+    android:orientation="vertical"
+    android:background="#710713">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:id="@+id/topContainer"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewBandaSuperior"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/banda"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewQuestion"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fbf2b1"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/god_of_war"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:id="@+id/bottomContainer"
+        >
+
+        <View
+            android:id="@+id/viewSeparador"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/primaryColor"
+            />
+
+        <EditText
+            android:id="@+id/editTextRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/editTextRespuestaHint"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:textColorHint="@color/secondaryLightColor"
+            android:textColor="@color/secondaryLightColor"
+            android:layout_below="@id/viewSeparador"
+            />
+
+        <Button
+            android:id="@+id/buttonNextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextRespuesta"
+            android:layout_centerHorizontal="true"
+            android:text="@string/buttonNext"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:fontFamily="@font/god_of_war"
+            android:textStyle="bold"
+            android:onClick="onClickButtonNextQuestion"
+            android:enabled="false"
+            />
+    </RelativeLayout>
+</LinearLayout>

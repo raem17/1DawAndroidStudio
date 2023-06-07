@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFinal"
+    android:background="#710713"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainContainer"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewBandaSuperior"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/banda"
+            tools:ignore="ContentDescription"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textViewTituloResultados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewBandaSuperior"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/god_of_war"
+            android:gravity="center"
+            android:text="@string/textViewTituloResultados"
+            android:textColor="#fbf2b1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewResultados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/god_of_war"
+            android:text="@string/answer"
+            android:textColor="#fbf2b1"
+            android:textSize="20sp"
+            android:layout_below="@id/textViewTituloResultados"
+            />
+
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewResultados"
+            android:text="@string/buttonShare"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:fontFamily="@font/god_of_war"
+            android:textStyle="bold"
+            android:enabled="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="compartirResultados"
+            />
+
+        <Button
+            android:id="@+id/buttonStartAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonShare"
+            android:text="@string/buttonStartAgain"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:fontFamily="@font/god_of_war"
+            android:textStyle="bold"
+            android:enabled="true"
+            android:onClick="partidaNueva"
+            android:layout_margin="20dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>

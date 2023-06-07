@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainContainer"
+    android:background="@drawable/rounded_corners"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewSex"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/icon_dog_male"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/imageViewSex"
+        android:text="Nombre"
+        android:textColor="#3fb8a7"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNombre"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/imageViewSex"
+        android:text="Raza"
+        android:textColor="#7dacbc"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+</RelativeLayout>

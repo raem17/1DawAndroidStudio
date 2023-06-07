@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IceCreamMaker_II</string>
+    <string name="textViewCantidad">CANTIDAD:</string>
+    <string name="textViewNumCantidad">1</string>
+    <string name="textViewPrecio">PRECIO:</string>
+    <string name="textViewNumPrecioTotal">3</string>
+    <string name="textViewSimboloEuro">€</string>
+    <string name="buttonResumen">RESUMEN DEL PEDIDO</string>
+    <string name="buttonIncrease">+</string>
+    <string name="buttonDecrease">-</string>
+</resources>

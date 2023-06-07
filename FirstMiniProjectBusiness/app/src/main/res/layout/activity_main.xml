@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/mainContainer"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+
+        <ImageView
+            android:id="@+id/imageViewBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/imageViewBusiness"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/the_relaxed_coffee"
+            />
+
+        <TextView
+            android:id="@+id/textViewNameBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:padding="5sp"
+            android:text="@string/textViewNameBusiness"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/descriptionBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:id="@+id/imageViewShop"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:contentDescription="@string/imageViewShop"
+                android:src="@drawable/store" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/imageViewShop"
+                android:text="@string/textViewDescription"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emailBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonEmail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/email"
+                android:contentDescription="@string/imageViewEmail"
+                android:onClick="mandarEmail"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imageButtonEmail"
+                android:text="@string/textViewEmail"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scheduleBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewSchedule"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:contentDescription="@string/imageViewSchedule"
+                android:src="@drawable/schedule" />
+
+            <TextView
+                android:id="@+id/textViewSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imageViewSchedule"
+                android:text="@string/textViewSchedule"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/websiteBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonWeb"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/web"
+                android:contentDescription="@string/imageViewWeb"
+                android:onClick="mostrarPaginaWeb"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imageButtonWeb"
+                android:text="@string/textViewWeb"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addressBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonAddress"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/address"
+                android:contentDescription="@string/imageViewAddress"
+                android:onClick="mostrarLugarEnMaps"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imageButtonAddress"
+                android:text="@string/textViewAddress"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lowerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/viewTextViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            tools:ignore="NestedWeights">
+
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E6E6E6"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/textViewPhoneNumber"
+                android:textColor="#00838F"
+                android:textSize="17sp"
+                android:layout_below="@id/viewSeparator"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numberBusinessContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonPhone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/phone"
+                android:contentDescription="@string/imageViewPhone"
+                android:onClick="hacerLlamada"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imageButtonPhone"
+                android:text="@string/textViewNumber"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

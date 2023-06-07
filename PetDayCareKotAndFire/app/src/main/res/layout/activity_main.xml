@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainContainer">
+
+    <ImageView
+        android:id="@+id/imageViewFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondo_login"
+        tools:ignore="ContentDescription"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMainIcon"
+        android:layout_width="190sp"
+        android:layout_height="190sp"
+        app:srcCompat="@drawable/icon_main"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginContainer"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:background="@drawable/rounded_corners"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageViewUserIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/icon_user"
+            tools:ignore="ContentDescription"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageViewUserIcon"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageViewPWIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/icon_password"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imageViewPWIcon"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonAcceder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/buttonAcceder" />
+
+        <Button
+            android:id="@+id/buttonRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonAcceder"
+            android:layout_marginTop="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/buttonRegistrarse" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dogsFactContainer"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_margin="25dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewSabiasQue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewSabiasQue"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:textColor="#338036"
+            />
+
+        <TextView
+            android:id="@+id/textViewDatoCurioso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/textViewDatoCurioso"
+            android:textSize="15sp"
+            android:layout_below="@id/textViewSabiasQue"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

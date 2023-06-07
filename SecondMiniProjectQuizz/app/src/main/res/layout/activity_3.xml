@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3"
+    android:id="@+id/mainContainer"
+    android:orientation="vertical"
+    android:background="#710713">
+
+  <RelativeLayout
+      android:id="@+id/topContainer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="40">
+
+    <ImageView
+        android:id="@+id/imageViewBandaSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/banda"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/god_of_war"
+        android:gravity="center"
+        android:text="@string/textViewQuestion"
+        android:textColor="#fbf2b1"
+        android:textSize="20sp" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/bottomContainer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="60">
+
+    <View
+        android:id="@+id/viewSeparador"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/primaryColor" />
+
+    <LinearLayout
+        android:id="@+id/answersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+      <RelativeLayout
+          android:id="@+id/leftContainer"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="50"
+          >
+
+        <CheckBox
+            android:id="@+id/checkBoxAnswerLeftTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:textSize="17sp"
+            android:fontFamily="@font/god_of_war"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxAnswerLeftBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxAnswerLeftTop"
+            android:text="@string/answer"
+            android:textSize="17sp"
+            android:fontFamily="@font/god_of_war"
+            />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/rightContainer"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="50">
+
+        <CheckBox
+            android:id="@+id/checkBoxAnswerRightTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:textSize="17sp"
+            android:fontFamily="@font/god_of_war"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxAnswerRightBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxAnswerRightTop"
+            android:text="@string/answer"
+            android:textSize="17sp"
+            android:fontFamily="@font/god_of_war"
+            />
+
+      </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answersContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/god_of_war"
+        android:onClick="onClickButtonNextQuestion"
+        android:padding="15dp"
+        android:text="@string/buttonNext"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+  </RelativeLayout>
+</LinearLayout>
